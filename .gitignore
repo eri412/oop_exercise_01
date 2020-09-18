@@ -1,0 +1,3 @@
+*.out
+Makefiles
+res_*
