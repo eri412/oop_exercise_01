@@ -95,7 +95,7 @@ public:
         }       
         unsigned int temp_tail;
         if (bits >= bits_in_tail) {
-            temp_head = (temp_head | _tail) << (bits - bits_in_tail);
+            temp_head |= (unsigned long long)_tail << (bits - bits_in_tail);
             temp_tail = 0;
         }
         else {
