@@ -74,15 +74,9 @@ public:
         BitString temp(_head | other._head, _tail | other._tail);
         return temp;
     }
-    BitString operator|(const unsigned int other) const {
-        return _tail | other;
-    }
     BitString operator^(const BitString& other) const {
         BitString temp(_head ^ other._head, _tail ^ other._tail);
         return temp;
-    }
-    BitString operator^(const unsigned int other) const {
-        return _tail ^ other;
     }
     BitString operator~() const {
         BitString temp(~_head, ~_tail);
